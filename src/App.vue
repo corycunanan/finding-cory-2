@@ -16,22 +16,30 @@
     </v-toolbar>
 
     <v-content>
-      <HelloWorld/>
+      <v-responsive :aspect-ratio="16/9">
+        <v-img :src="require('./assets/wallpaper.jpg')" />
+      </v-responsive>
+      <Welcome/>
     </v-content>
+
+    <v-footer>
+      <v-spacer></v-spacer>
+      <div>&copy; {{ new Date().getFullYear() }}</div>
+    </v-footer>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Welcome from './components/Welcome'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Welcome
   },
   data () {
     return {
-      //
+      publicPath: process.env.BASE_URL
     }
   }
 }
