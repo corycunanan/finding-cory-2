@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
         <span>Vuetify</span>
@@ -19,7 +19,10 @@
       <v-responsive :aspect-ratio="16/9">
         <v-img :src="require('./assets/wallpaper.jpg')" />
       </v-responsive>
-      <Welcome/>
+      <Welcome />
+      <CoreSkills />
+      <FeaturedWorks />
+      <FeaturedPosts />
     </v-content>
 
     <v-footer>
@@ -31,11 +34,17 @@
 
 <script>
 import Welcome from './components/Welcome'
+import CoreSkills from './components/CoreSkills'
+import FeaturedWorks from './components/FeaturedWorks'
+import FeaturedPosts from './components/FeaturedPosts'
 
 export default {
   name: 'App',
   components: {
-    Welcome
+    Welcome,
+    CoreSkills,
+    FeaturedWorks,
+    FeaturedPosts
   },
   data () {
     return {
