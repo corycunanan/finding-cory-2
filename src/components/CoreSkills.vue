@@ -4,7 +4,7 @@
       text-xs-center
       wrap
     >
-      <v-flex xs6 offset-xs3>
+      <v-flex sm6 offset-sm3>
           <h1 class="mb-5 display-2">Core Skills</h1>
           <v-chip
             outline

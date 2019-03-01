@@ -1,9 +1,9 @@
 <template>
-    <v-container>
+    <v-container class="mb-5">
         <v-layout
             wrap
         >
-            <v-flex xs8 offset-xs2>
+            <v-flex sm8 offset-sm2>
                 <h1 class="mb-5 display-2 text-xs-center">Featured Posts</h1>
                 <v-layout>
                     <v-flex xs10 offset-xs1>

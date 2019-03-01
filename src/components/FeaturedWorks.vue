@@ -2,9 +2,9 @@
     <v-container fluid>
         <v-layout
             wrap
-            class="mt-5"
+            class="mt-5 mb-5"
         >
-            <v-flex xs6 offset-xs3>
+            <v-flex sm6 offset-sm3>
                 <h1 class="mb-5 display-2 text-xs-center">Featured Works</h1>
                 <v-tabs
                     grow
