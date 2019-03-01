@@ -85,6 +85,10 @@
   border-width: 60px 100vw 0 0;
   border-color: transparent white transparent transparent;
 }
+
+.bl-yellow {
+  border-left: 5px solid #FFCC68;
+}
 </style>
 
 <style scoped lang="less">

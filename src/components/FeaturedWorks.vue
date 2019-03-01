@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid>
+    <v-container class="bl-yellow" fluid>
         <v-layout
             wrap
             class="mt-5 mb-5"
