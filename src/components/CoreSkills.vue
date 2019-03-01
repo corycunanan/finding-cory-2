@@ -1,36 +1,79 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="core-skills">
     <v-layout
       text-xs-center
       wrap
     >
-      <v-flex xs8 offset-xs2>
-          <h1>Core Skills</h1>
-          <v-chip outline>Skill 1</v-chip>
-          <v-chip outline>Skill 2</v-chip>
-          <v-chip outline>Skill 3</v-chip>
-          <v-chip outline>Skill 4</v-chip>
+      <v-flex xs6 offset-xs3>
+          <h1 class="mb-5 display-2">Core Skills</h1>
+          <v-chip
+            outline
+            :class="`skill ${skill.size}`"
+            v-for="skill in coreSkills"
+            :key="skill.text"
+          >
+            {{ skill.text }}
+          </v-chip>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
 
+<style scoped lang="less">
+.core-skills {
+  background-color: #373540;
+  color: white;
+  padding: 10rem 0;
+
+  .skill {
+    border: 1px solid #BEBEBE;
+    border-radius: 10px;
+    color: white;
+    padding: 2rem;
+
+    &.large {
+      padding: 2.5rem;
+    }
+  }
+}
+</style>
+
 <script>
   export default {
     data: () => ({
-      ecosystem: [
+      coreSkills: [
         {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader'
+          text: 'User Experience (UX) Design',
+          size: 'large'
         },
         {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify'
+          text: 'User Interaction (UI) Design',
+          size: 'large'
         },
         {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify'
-        }
+          text: 'Web Development',
+          size: 'normal'
+        },
+        {
+          text: 'Graphic Design',
+          size: 'normal'
+        },
+        {
+          text: 'Video Editing',
+          size: 'normal'
+        },
+        {
+          text: 'Music Production',
+          size: 'normal'
+        },
+        {
+          text: 'Project Management',
+          size: 'normal'
+        },
+        {
+          text: 'Writing',
+          size: 'normal'
+        },
       ],
       importantLinks: [
         {

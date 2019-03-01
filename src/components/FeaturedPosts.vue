@@ -4,7 +4,7 @@
             wrap
         >
             <v-flex xs8 offset-xs2>
-                <h1 class="text-xs-center">Featured Posts</h1>
+                <h1 class="mb-5 display-2 text-xs-center">Featured Posts</h1>
                 <v-layout>
                     <v-flex xs12>
                         <v-card 

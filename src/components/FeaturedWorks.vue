@@ -2,9 +2,10 @@
     <v-container fluid>
         <v-layout
             wrap
+            class="mt-5"
         >
             <v-flex xs8 offset-xs2>
-                <h1 class="text-xs-center">Featured Works</h1>
+                <h1 class="mb-5 display-2 text-xs-center">Featured Works</h1>
                 <v-tabs
                     grow
                     centered
