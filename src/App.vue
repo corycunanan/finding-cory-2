@@ -1,18 +1,11 @@
 <template>
   <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
+    <v-toolbar class="cory-toolbar" absolute>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat>Link One</v-btn>
+        <v-btn flat>Link Two</v-btn>
+        <v-btn flat>Link Three</v-btn>
+      </v-toolbar-items>
     </v-toolbar>
 
     <v-content>
@@ -31,6 +24,19 @@
     </v-footer>
   </v-app>
 </template>
+
+<style scoped>
+.cory-toolbar {
+  top: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+</style>
+
+<style>
+.v-toolbar__content {
+  justify-content: center;
+}
+</style>
 
 <script>
 import Welcome from './components/Welcome'
