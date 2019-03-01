@@ -6,11 +6,12 @@
             <v-flex xs8 offset-xs2>
                 <h1 class="mb-5 display-2 text-xs-center">Featured Posts</h1>
                 <v-layout>
-                    <v-flex xs12>
+                    <v-flex xs10 offset-xs1>
                         <v-card 
                             v-for="i in 4"
                             :key="`${i}`"
                             color="white darken-2"
+                            class="featured-post-item mb-4"
                         >
                             <v-layout>
                                 <v-flex xs7>
@@ -30,7 +31,6 @@
                                     />
                                 </v-flex>
                             </v-layout>
-                            <v-divider light></v-divider>
                         </v-card>
                     </v-flex>
                 </v-layout>
@@ -38,6 +38,14 @@
         </v-layout>
     </v-container>
 </template>
+
+<style scoped lang="less">
+.featured-post-item {
+    padding: 1rem;
+    border: 1px solid #A29F9F;
+    border-radius: 10px;
+}
+</style>
 
 <script>
   export default {

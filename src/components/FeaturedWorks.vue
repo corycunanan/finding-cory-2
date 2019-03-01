@@ -4,14 +4,13 @@
             wrap
             class="mt-5"
         >
-            <v-flex xs8 offset-xs2>
+            <v-flex xs6 offset-xs3>
                 <h1 class="mb-5 display-2 text-xs-center">Featured Works</h1>
                 <v-tabs
                     grow
                     centered
-                    dark
                 >
-                    <v-tabs-slider color="yellow"></v-tabs-slider>
+                    <v-tabs-slider />
 
                     <v-tab href="#tab-1">
                         Featured Work 1
@@ -30,7 +29,7 @@
                     :key="i"
                     :value="'tab-' + i"
                     >
-                    <v-card>
+                    <v-card class="featured-work">
                         <v-img
                             src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
                             aspect-ratio="2.75"
@@ -49,6 +48,33 @@
         </v-layout>
     </v-container>
 </template>
+
+<style lang="less">
+.v-tabs__bar {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+
+    .v-tabs__slider-wrapper {
+        display: none;
+    }
+
+    .v-tabs__item--active {
+        background-color: #373540;
+        color: white;
+    }
+
+    .v-tabs__div:not(:last-child) {
+        border-right: 1px solid black;
+    }
+}
+
+.featured-work {
+    padding: 2rem;
+    border: 1px solid #A29F9F;
+}
+</style>
 
 <script>
   export default {
