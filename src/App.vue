@@ -38,9 +38,12 @@
           <v-layout class="titles">
               <v-flex offset-sm2>
                   <v-layout class="ml-4 white--text justify-left">
-                    <h3>UX Designer</h3>
-                    <h3>Music Producer</h3>
-                    <h3>Content Creator</h3>
+                    <h3
+                      v-for="position in positions"
+                      :key="position"
+                    >
+                      {{position}}
+                    </h3>
                   </v-layout>
               </v-flex>
           </v-layout>
@@ -138,6 +141,8 @@ import CoreSkills from './components/CoreSkills'
 import FeaturedWorks from './components/FeaturedWorks'
 import FeaturedPosts from './components/FeaturedPosts'
 
+import data from "./data/home.json";
+
 export default {
   name: 'App',
   components: {
@@ -148,7 +153,8 @@ export default {
   },
   data () {
     return {
-      publicPath: process.env.BASE_URL
+      publicPath: process.env.BASE_URL,
+      positions: data.positions
     }
   }
 }

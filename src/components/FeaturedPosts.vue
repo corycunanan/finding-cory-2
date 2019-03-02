@@ -48,11 +48,11 @@
 </style>
 
 <script>
-  export default {
-    data: () => ({
-        text: "Lorem ipsum dolor"
-    })   
-  }
+export default {
+data: () => ({
+    text: "Lorem ipsum dolor"
+})   
+}
 </script>
 
 <style>
