@@ -1,0 +1,29 @@
+{
+    "tab": "Cory Cunanan - Personal Website",
+    "positions": [
+        "UX Designer",
+        "Music Producer",
+        "Content Creator"
+    ],
+    "welcome": {
+        "title": "Hi, I'm Cory",
+        "rows": [
+            {
+                "id": 1,
+                "image": "https://via.placeholder.com/150",
+                "text": "I’m currently a junior undergraduate at the University of California, Irvine. I’m majoring in Informatics with a specialization in Human-Computer Interaction and minoring in Digital Arts. Other areas of interest include project management, writing, and software design."
+            },
+            {
+                "id": 2,
+                "image": "https://via.placeholder.com/150",
+                "text": "During my free time, I love playing the ukulele and producing music in FL Studio. (Check out my Soundcloud!) When searching for inspiration and yearning for solid writing, I read and compile articles online. In addition, I occasionally edit and publish videos for my friends. I'm also a huge fan of board games and competitive Super Smash Bros."
+            },
+            {
+                "id": 3,
+                "image": "https://via.placeholder.com/150",
+                "text": "View portfolio to see the processes and deliberations behind my most recent works. My blog includes my thoughts, opinions, and mental processes in design, lifestyle, media, and other fields. Feel free to contact me. I'd love to hear your feedback or get involved with your latest project."
+            }
+        ],
+        "blockquote": "My passion for creative expression and fascination with technology have led me to my current interest in user experience design. My design process is supplemented by a background in graphic design and previous experience as a web developer. I’m constantly motivated by opportunities to improve not only the world around me, but also myself."
+    }
+}

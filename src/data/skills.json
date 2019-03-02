@@ -1,0 +1,36 @@
+{
+    "skills": [
+        {
+            "text": "User Experience (UX) Design",
+            "size": "large"
+        },
+        {
+            "text": "User Interaction (UI) Design",
+            "size": "large"
+        },
+        {
+            "text": "Web Development",
+            "size": "normal"
+        },
+        {
+            "text": "Graphic Design",
+            "size": "normal"
+        },
+        {
+            "text": "Video Editing",
+            "size": "normal"
+        },
+        {
+            "text": "Music Production",
+            "size": "normal"
+        },
+        {
+            "text": "Project Management",
+            "size": "normal"
+        },
+        {
+            "text": "Writing",
+            "size": "normal"
+        }
+    ]
+}
