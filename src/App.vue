@@ -49,10 +49,7 @@
           </v-layout>
         </v-img>
       </v-responsive>
-      <Welcome />
-      <CoreSkills />
-      <FeaturedWorks />
-      <FeaturedPosts />
+      <ViewComponent />
     </v-content>
 
     <v-footer :height="200">
@@ -86,7 +83,7 @@
   top: -75px;
   border-style: solid;
   border-width: 60px 100vw 0 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent #fafafa transparent transparent;
 }
 
 .bl-yellow {
@@ -136,21 +133,10 @@ footer.v-footer {
 </style>
 
 <script>
-import Welcome from './components/Welcome'
-import CoreSkills from './components/CoreSkills'
-import FeaturedWorks from './components/FeaturedWorks'
-import FeaturedPosts from './components/FeaturedPosts'
-
 import data from "./data/home.json";
 
 export default {
   name: 'App',
-  components: {
-    Welcome,
-    CoreSkills,
-    FeaturedWorks,
-    FeaturedPosts
-  },
   data () {
     return {
       publicPath: process.env.BASE_URL,
