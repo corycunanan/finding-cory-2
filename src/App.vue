@@ -49,7 +49,7 @@
           </v-layout>
         </v-img>
       </v-responsive>
-      <ViewComponent />
+      <router-view />
     </v-content>
 
     <v-footer :height="200">

@@ -20,7 +20,6 @@ export default {
     CoreSkills,
     FeaturedWorks,
     FeaturedPosts
-  },
-  data () {}
+  }
 }
 </script>
